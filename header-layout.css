@@ -1,0 +1,26 @@
+.header-inner {
+  width: min(1490px, calc(100% - 48px));
+  justify-content: flex-start;
+}
+
+.header-inner > .brand {
+  flex: 0 0 auto;
+  margin-right: clamp(180px, 16.2vw, 282px);
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    width: min(100% - 40px, 1180px);
+    justify-content: space-between;
+  }
+
+  .header-inner > .brand {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-inner {
+    width: calc(100% - 36px);
+  }
+}
